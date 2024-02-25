@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
 # A script that uses ssh to connect to server
-server_ip="54.157.189.1"
-user="ubuntu"
-private_key="~/.ssh/school"
-
-# SSH connection using single-character flags
-ssh -i "$private_key" "$user"@"$server_ip"
+ssh ubuntu@54.157.189.1
 
