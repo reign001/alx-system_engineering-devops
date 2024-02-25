@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # A script that uses ssh to connect to server
-server_ip="your_server_ip"
+server_ip="54.157.189.1"
 user="ubuntu"
 private_key="~/.ssh/school"
 
