@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # a script for SSH client configuration
 Host *
-	PasswordAuthentication no
-	IdentityFile ~/.ssh/school
-	SendEnv LANG LC_*
-	HashKnownHost yes
-	GSSAPIAuthentication yes
-	GSSPIDelegateCredentials no
+   PasswordAuthentication no
+   IdentityFile ~/.ssh/school
+   SendEnv LANG LC_*
+   HashKnownHost yes
+   GSSAPIAuthentication yes
+   GSSAPIDelegateCredentials no
