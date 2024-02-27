@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # A script that uses ssh to connect to server
-ssh 54.157.189.1.com
+ssh ubuntu@54.157.189.1
 
