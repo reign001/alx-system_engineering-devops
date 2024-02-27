@@ -4,6 +4,7 @@ Host *
    PasswordAuthentication no
    IdentityFile ~/.ssh/school
    SendEnv LANG LC_*
+   ChallengeResponseAuthentication no
    HashKnownHost yes
    GSSAPIAuthentication yes
    GSSAPIDelegateCredentials no
