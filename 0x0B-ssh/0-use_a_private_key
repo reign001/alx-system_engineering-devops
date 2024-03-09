@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # A script that uses ssh to connect to server
-ssh ubuntu  ~/.ssh/school
+ssh-keygen -t rsa -b 4096 -p betty -f school
 
