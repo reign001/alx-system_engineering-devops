@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #client configuration file using puppet
-file {'/etc/ssh/ssh_config':
+
+file { '/etc/ssh/ssh_config':
 	ensure => present,
 
 content =>"
@@ -10,4 +11,5 @@ content =>"
 	IdentityFile ~/.ssh/school
 	PasswordAuthentification no
 	",
+
 }
