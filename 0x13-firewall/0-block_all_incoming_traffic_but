@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #configure a ufw firewall to block incoming traffic
-#except for some specified traffic
 
 sudo apt install ufw
 sudo ufw default deny incoming
