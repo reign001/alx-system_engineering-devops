@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # duplicate web-01 to web-02
-# these scripts are an upgrade from the web-server scripts...
-
 # uncomment to see the script run in action
 #set -x
 
@@ -18,7 +16,7 @@ new_string="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/reign
 sudo sed -i "s/server_name _;/$new_string/" /etc/nginx/sites_enabled/default
 
 # creating a custom error page
-echo "ceci n'est pas une page" | sudo tee /var/www/html/404.html
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 
 # custom HTTP response header
 
@@ -28,4 +26,4 @@ sudo sed -i "server_name _;/a add_header X-Served-by $HOSTNAME;" /etc/nginx/site
 sudo nginx -t
 
 #restart nginx
-udo service nginx restart
+sudo service nginx restart
